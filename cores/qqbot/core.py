@@ -270,6 +270,7 @@ def run_gocq_bot(cfg: dict, _global_object: GlobalObject):
         else:
             logger.log("检查完毕，未发现问题。", tag="QQ")
             break
+            #test
     try:
         qq_gocq = QQGOCQ(cfg=cfg, message_handler=oper_msg, global_object=_global_object)
         _global_object.platforms.append(RegisteredPlatform(platform_name="gocq", platform_instance=qq_gocq, origin="internal"))
